@@ -1,0 +1,50 @@
+.typed-cursor {
+    display: inline-block;
+    color: white;
+    background-color: white;
+    padding-top: .3rem;
+}
+
+#bef::before {
+    content: '';
+    display: inline-block;
+}
+
+.scrolled {
+    box-shadow: 0px 2px 10px 1px rgba(46, 74, 117, 0.906);
+    transition: 1s;
+}
+
+
+.pfbox {
+    background-image: url('https://lh3.googleusercontent.com/pw/ABLVV86bE0fXzpdORIH8dJx1e1EquLP2lmkwOaP40_1SPtn_g5ts-bW8L3rMYrtZwiD8Pl5I0KF_sy0opSe29tPDvMo8u2ENGU5AVu5DtDq6L5Lr2QNcpiuw=w2400');
+    background-size: cover;
+    background-position: top;
+    transition: background-position 5s ease-in-out;
+}
+
+.header {
+    text-shadow: 2px 2px rgb(130, 130, 130);
+}
+
+.rotate-text {
+    position: absolute;
+    transform-origin: 0;
+}
+
+
+.pfbox:hover {
+    background-position: bottom;
+}
+
+@keyframes cursor {
+    50% {
+        border-color: transparent
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
