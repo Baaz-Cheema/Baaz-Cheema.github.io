@@ -63,7 +63,11 @@ function Hamburger({ scrollTo }) {
         return () => document.removeEventListener('mousedown', handler)
     }, [open])
 
-    
+    function handleOnClick(section) {
+        scrollTo(section);
+        setOpen(false);
+    }
+
     return (
         <>
             <motion.div onClick={() => setOpen(!open)} initial={{ x: 0 }} animate={{ x: open ? '-3px' : 0 }} transition={{ duration: .5 }} className="flex-col justify-center hidden md:flex z-30 mr-2 hamburger">
@@ -73,9 +77,9 @@ function Hamburger({ scrollTo }) {
             </motion.div>
             <AnimatePresence>
                 {open && <motion.div ref={menuRef} initial={{ x: 50 }} animate={{ x: 0 }} exit={{ x: 150 }} transition={{ type: 'just' }} className="fixed bg-slate-800 bg-opacity-95 flex flex-col justify-center right-0 h-screen z-20 items-center overflow-hidden">
-                    <li onClick={() => scrollTo('projects')} className="m-5 my-3 text-slate-300 font-mono hover:text-amber-400 list-none" >Projects</li>
-                    <li onClick={() => scrollTo('about')} className="m-5 my-3 text-slate-300 font-mono hover:text-amber-400 list-none" >About</li>
-                    <li onClick={() => scrollTo('contact')} className="m-5 my-3 text-slate-300 font-mono hover:text-amber-400 list-none">Contact</li>
+                    <li onClick={() => handleOnClick('projects')} className="m-5 my-3 text-slate-300 font-mono hover:text-amber-400 list-none" >Projects</li>
+                    <li onClick={() => handleOnClick('about')} className="m-5 my-3 text-slate-300 font-mono hover:text-amber-400 list-none" >About</li>
+                    <li onClick={() => handleOnClick('contact')} className="m-5 my-3 text-slate-300 font-mono hover:text-amber-400 list-none">Contact</li>
                     <a className="m-5 my-3 text-slate-300 font-mono hover:text-amber-400" href="">Resume</a>
                     <a href="https://www.linkedin.com/in/baaz-cheema-ab0935212/"
                         target="_blank "><motion.i whileHover={{ y: -3 }} className=' m-5 my-2 bx bxl-linkedin text-4xl text-slate-300  hover:text-amber-400'></motion.i></a>
