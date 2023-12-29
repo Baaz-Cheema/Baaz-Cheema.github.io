@@ -35,13 +35,13 @@ export default function Navbar({ scrollTo }) {
     }
     return (
         <nav className={`flex z-20 justify-between box-border fixed w-full px-28 lg:w-full lg:px-5 top-0 bg-slate-800 bg-opacity-95 ${scrolled && 'scrolled'}`}>
-            <h1 onClick={scrollToTop} className="text-2xl cursor-pointer py-2 font-mono header text-amber-300">BZCH</h1>
+            <h1 onClick={scrollToTop} className="text-2xl cursor-pointer py-2 font-mono header text-amber-300">B.Cheema</h1>
 
             <Hamburger scrollTo={scrollTo} />
             <div className="flex py-4 md:hidden ">
                 <li onClick={() => scrollTo('about')} className="list-none px-3 text-slate-300 hover:text-slate-100 cursor-pointer">About</li>
                 <li onClick={() => scrollTo('projects')} className="list-none px-3 text-slate-300  hover:text-slate-100 cursor-pointer">Projects</li>
-                <li className="list-none px-3 text-slate-300  hover:text-slate-100 cursor-pointer">Resume</li>
+                <a href="https://drive.google.com/file/d/169k0EK2u0rmDB-BHzleTdHagFefi02Xr/view" target="_blank "> <li className="list-none px-3 text-slate-300  hover:text-slate-100 cursor-pointer">Resume</li></a>
                 <li onClick={() => scrollTo('contact')} className="list-none px-3 text-slate-300  hover:text-slate-100 cursor-pointer">Contact</li>
             </div>
         </nav>
@@ -80,7 +80,7 @@ function Hamburger({ scrollTo }) {
                     <li onClick={() => handleOnClick('projects')} className="m-5 my-3 text-slate-300 font-mono hover:text-amber-400 list-none" >Projects</li>
                     <li onClick={() => handleOnClick('about')} className="m-5 my-3 text-slate-300 font-mono hover:text-amber-400 list-none" >About</li>
                     <li onClick={() => handleOnClick('contact')} className="m-5 my-3 text-slate-300 font-mono hover:text-amber-400 list-none">Contact</li>
-                    <a className="m-5 my-3 text-slate-300 font-mono hover:text-amber-400" href="">Resume</a>
+                    <a className="m-5 my-3 text-slate-300 font-mono hover:text-amber-400" href="https://drive.google.com/file/d/169k0EK2u0rmDB-BHzleTdHagFefi02Xr/view" target="_blank ">Resume</a>
                     <a href="https://www.linkedin.com/in/baaz-cheema-ab0935212/"
                         target="_blank "><motion.i whileHover={{ y: -3 }} className=' m-5 my-2 bx bxl-linkedin text-4xl text-slate-300  hover:text-amber-400'></motion.i></a>
                     <a href="https://github.com/Baaz-Cheema"
