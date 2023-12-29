@@ -12,7 +12,10 @@ export default function Portfolio(props) {
             transition={{ duration: .7 }}
             ref={props.projectsRef}
             className="mt-30 lg:mt-48 mb-44 md:mt-36 md:mb-28 xs:mt-40 ">
-            <h1 className="text-2xl font-bold font-mono text-amber-300  header uppercase">Portfolio</h1>
+            <div className="flex items-center">
+                <h1 className="text-2xl font-bold font-mono text-amber-300  header uppercase inline-block">Portfolio</h1>
+                <div className="inline-block bg-amber-400 w-64 h-[1.5px] ml-10"></div>
+            </div>
             <motion.div className='flex justify-between mt-10  lg:flex-col items-center'>
                 <motion.div className=' bg-gray-200 w-1/2 h-96 overflow-hidden pfbox lg:w-9/12 md:w-full sm:h-72'>
 

@@ -15,14 +15,14 @@ export default function Techstack({ delayVal }) {
                 return <motion.div
                     key={i}
                     id="skill"
-                    className={a.className}
+                    className={`${a.className}`}
                     variants={{
                         initial: { scale: 0 },
                         animate: { scale: 1 }
                     }}
 
                 >
-                    <motion.img whileHover={{ scale: 1.1 }} src={a.src} alt="" />
+                    <motion.img className="" whileHover={{ scale: 1.1 }} src={a.src} alt="" />
                 </motion.div>
             })}
         </motion.div>

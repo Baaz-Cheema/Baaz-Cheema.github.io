@@ -26,7 +26,7 @@ function App() {
   return (
     <div className='relative'>
       <Navbar scrollTo={scrollTo} />
-      <div className='w-10/12 lg:w-10/12 mx-auto '>
+      <div className='w-10/12 lg:w-10/12 md:w-11/12 mx-auto '>
         <div className='fixed rotate-90 bottom-36 -right-36  flex items-center md:hidden'>
           <h1 className=' text-slate-200 font-mono mr-5'>chrisbahadur@gmail.com</h1>
           <div className='h-[1px] w-40 bg-slate-200'>  </div>

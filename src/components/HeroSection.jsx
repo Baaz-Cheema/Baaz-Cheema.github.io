@@ -11,7 +11,7 @@ export default function HeroSection() {
         // Initialize Typed.js after a delay
         const timer = setTimeout(() => {
             const typed = new Typed(el.current, {
-                strings: ["I develop front-end.", 'I design UIs.', "I solve problems."],
+                strings: ["I develop front-end.", 'I design responsive UIs.', "I solve problems."],
                 typeSpeed: 50,
                 backSpeed: 50,
                 loop: true,
