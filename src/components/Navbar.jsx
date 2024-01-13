@@ -36,7 +36,9 @@ export default function Navbar({ scrollTo }) {
     return (
         <nav className={`flex z-20 justify-between box-border items-center fixed w-full px-32 lg:w-full lg:px-5 top-0 bg-slate-800 bg-opacity-95 md:py-2 ${scrolled && 'scrolled'}`}>
             <h1 onClick={scrollToTop} className="text-2xl cursor-pointer py-2 w-12 flex items-center justify-center text-amber-300 md:w-10 md:h-10 font-mono h hover:scale-105 transition-transform ">B</h1>
+
             <Hamburger scrollTo={scrollTo} />
+
             <div className="flex py-4 md:hidden items-center gap-5">
                 <li onClick={() => scrollTo('about')} className="list-none px-3 text-slate-300 hover:text-slate-100 cursor-pointer">About</li>
                 <li onClick={() => scrollTo('projects')} className="list-none px-3 text-slate-300  hover:text-slate-100 cursor-pointer">Projects</li>
@@ -75,7 +77,7 @@ function Hamburger({ scrollTo }) {
                 <motion.div initial={{ x: 0, y: 0 }} animate={{ rotate: open ? '-45deg' : 0, x: open ? '3px' : 0, y: open ? '-6px' : 0 }} transition={{ duration: .5 }} className="h-[2px] w-6 m-[3px] bg-slate-300 rounded"></motion.div>
             </motion.div>
             <AnimatePresence>
-                {open && <motion.div ref={menuRef} initial={{ x: 50 }} animate={{ x: 0 }} exit={{ x: 150 }} transition={{ type: 'just' }} className="fixed bg-slate-800 bg-opacity-95 flex flex-col justify-center right-0 h-screen z-20 items-center overflow-hidden">
+                {open && <motion.div ref={menuRef} initial={{ x: 50 }} animate={{ x: 0 }} exit={{ x: 150 }} transition={{ type: 'just' }} className="fixed bg-slate-800 bg-opacity-95 flex flex-col justify-center right-0 top-0 bottom-0 h-full z-20 items-center overflow-hidden">
                     <li onClick={() => handleOnClick('projects')} className="m-5 my-3 text-slate-300 font-mono hover:text-amber-400 list-none" >Projects</li>
                     <li onClick={() => handleOnClick('about')} className="m-5 my-3 text-slate-300 font-mono hover:text-amber-400 list-none" >About</li>
                     <li onClick={() => handleOnClick('contact')} className="m-5 my-3 text-slate-300 font-mono hover:text-amber-400 list-none">Contact</li>
