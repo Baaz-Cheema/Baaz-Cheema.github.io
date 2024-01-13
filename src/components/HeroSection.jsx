@@ -3,9 +3,10 @@ import { motion } from "framer-motion"
 import { useRef, useEffect } from "react"
 import Typed from "typed.js"
 import Techstack from "./Techstack";
+import { useState } from "react";
 
 export default function HeroSection() {
-
+    const [isLoaded, setIsLoaded] = useState(false)
     const el = useRef()
     useEffect(() => {
         // Initialize Typed.js after a delay
@@ -51,8 +52,11 @@ export default function HeroSection() {
                             </a>
                         </motion.div>
                     </div>
-                    <motion.div initial={{ scale: 1.1, opacity: 0 }} transition={{ duration: .7 }} animate={{ scale: 1, opacity: 1 }} className="relative w-1/2 lg:w-10/12 lg:mb-10   flex justify-center pl-20 lg:pl-0 lg:justify-center -z-10">
-                        <img className="w-96" src="https://lh3.googleusercontent.com/pw/ABLVV845uZXojlt3kIcDoedfyEuQKn_v_3XNuh_Mjrf4QS4uAEFUrp9WJn4IS1FPo1zdquBhswX8a5OoPbT6o_HNPFIX_BKNUfovrzi3zpwfpdRXd1IF6_8M=w2400" alt="" />
+                    <motion.div className="relative w-1/2 lg:w-10/12 lg:mb-10   flex justify-center pl-20 lg:pl-0 lg:justify-center -z-10">
+
+                        <motion.img rel="preload" onLoad={() => setIsLoaded(true)} initial={{ opacity: 0, scale: 1.1 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: .7 }} className="w-96" src="https://lh3.googleusercontent.com/pw/ABLVV84X8J3GhO9FIiHsAsu91Ul8eOJjO_UBEqD1gjE1iQnqVekZbu39_qwVZv-FGjjaKvxDE5Ui4YBbEgIMhib_SJmZepSYNMFbjlALf6pWujHfDSrr09K5=w2400" alt="" />
+
+
                     </motion.div>
                     <div>
                     </div>

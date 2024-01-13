@@ -34,15 +34,14 @@ export default function Navbar({ scrollTo }) {
         window.scrollTo({ top: 0, behavior: 'smooth' })
     }
     return (
-        <nav className={`flex z-20 justify-between box-border fixed w-full px-28 lg:w-full lg:px-5 top-0 bg-slate-800 bg-opacity-95 ${scrolled && 'scrolled'}`}>
-            <h1 onClick={scrollToTop} className="text-2xl cursor-pointer py-2 font-mono header text-amber-300">B.Cheema</h1>
-
+        <nav className={`flex z-20 justify-between box-border items-center fixed w-full px-32 lg:w-full lg:px-5 top-0 bg-slate-800 bg-opacity-95 md:py-2 ${scrolled && 'scrolled'}`}>
+            <h1 onClick={scrollToTop} className="text-2xl cursor-pointer py-2 w-12 flex items-center justify-center text-amber-300 md:w-10 md:h-10 font-mono h hover:scale-105 transition-transform ">B</h1>
             <Hamburger scrollTo={scrollTo} />
-            <div className="flex py-4 md:hidden ">
+            <div className="flex py-4 md:hidden items-center gap-5">
                 <li onClick={() => scrollTo('about')} className="list-none px-3 text-slate-300 hover:text-slate-100 cursor-pointer">About</li>
                 <li onClick={() => scrollTo('projects')} className="list-none px-3 text-slate-300  hover:text-slate-100 cursor-pointer">Projects</li>
-                <a href="https://drive.google.com/file/d/169k0EK2u0rmDB-BHzleTdHagFefi02Xr/view" target="_blank "> <li className="list-none px-3 text-slate-300  hover:text-slate-100 cursor-pointer">Resume</li></a>
                 <li onClick={() => scrollTo('contact')} className="list-none px-3 text-slate-300  hover:text-slate-100 cursor-pointer">Contact</li>
+                <a href="https://drive.google.com/file/d/169k0EK2u0rmDB-BHzleTdHagFefi02Xr/view" target="_blank "> <li className="list-none w-full h-full px-3 border border-amber-300 py-2 cursor-pointer text-amber-300 hover:border-red-500 hover:-translate-y-1 hover:text-red-500 transition-all">Resume</li></a>
             </div>
         </nav>
     )

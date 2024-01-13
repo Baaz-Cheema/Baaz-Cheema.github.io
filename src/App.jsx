@@ -8,6 +8,15 @@ import Contact from './components/Contact'
 import { useRef } from 'react'
 import Techstack from './components/Techstack'
 
+
+
+
+
+
+const img = new Image(); //for image preloading. 
+img.src = "https://lh3.googleusercontent.com/pw/ABLVV84X8J3GhO9FIiHsAsu91Ul8eOJjO_UBEqD1gjE1iQnqVekZbu39_qwVZv-FGjjaKvxDE5Ui4YBbEgIMhib_SJmZepSYNMFbjlALf6pWujHfDSrr09K5=w2400"
+
+
 function App() {
   const aboutRef = useRef()
   const heroRef = useRef()
