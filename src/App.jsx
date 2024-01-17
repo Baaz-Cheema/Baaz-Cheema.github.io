@@ -7,7 +7,8 @@ import Portfolio from './components/Portfolio'
 import Contact from './components/Contact'
 import { useRef } from 'react'
 import Techstack from './components/Techstack'
-
+import { motion } from 'framer-motion'
+import Sidebar from './components/Sidebar'
 
 
 
@@ -26,7 +27,7 @@ function App() {
     if (ref === 'about') {
       aboutRef.current?.scrollIntoView({ behavior: 'smooth', block: 'center' })
     } else if (ref === 'projects') {
-      projectsRef.current?.scrollIntoView({ behavior: 'smooth', block: 'center' })
+      projectsRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' })
     } else if (ref === 'contact') {
       contactRef.current?.scrollIntoView({ behavior: 'smooth', block: 'center' })
     }
@@ -35,15 +36,16 @@ function App() {
   return (
     <div className='relative'>
       <Navbar scrollTo={scrollTo} />
-      <div className='w-10/12 lg:w-10/12 md:w-11/12 mx-auto '>
-        <div className='fixed rotate-90 bottom-36 -right-36  flex items-center md:hidden'>
+      <div className='w-9/12 lg:w-8/12 md:w-11/12 mx-auto'>
+        <motion.div className='fixed rotate-90 bottom-36 -right-28  flex items-center md:hidden' initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.4, duration: 1 }}>
           <h1 className=' text-slate-200 font-mono mr-5'>chrisbahadur@gmail.com</h1>
           <div className='h-[1px] w-40 bg-slate-200'>  </div>
-        </div>
+        </motion.div>
+        <Sidebar />
         <HeroSection heroRef={heroRef} />
-        <div className='hidden lg:block'>
+        {/* <div className='hidden lg:block'>
           <Techstack />
-        </div>
+        </div> */}
         <Portfolio projectsRef={projectsRef} />
         <About aboutRef={aboutRef} />
         <Contact contactRef={contactRef} />
