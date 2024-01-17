@@ -4,8 +4,13 @@ export default function About(props) {
     return (
         <section className="mb-48" ref={props.aboutRef} >
             <div className="flex items-center mb-10">
-                <h1 className=' text-2xl font-bold font-mono text-amber-300 uppercase header   hidden lg:block '>About me</h1>
-                <div className=" bg-amber-400 w-36 h-[1.5px] ml-10 hidden lg:block md:flex-1"></div>
+                <h1 className=' text-3xl font-bold text-amber-300 uppercase whitespace-nowrap hidden lg:block '>About me</h1>
+                <motion.div initial={{ scaleX: 0 }}
+                    whileInView={{ scaleX: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 1 }}
+                    style={{ transformOrigin: "left" }} className=" bg-amber-400 w-64 h-[1.5px] ml-10 hidden lg:block">
+                </motion.div>
             </div>
 
             <motion.div className='flex justify-between lg:flex-col items-center h-96 md:h-80 relative'>
@@ -15,8 +20,13 @@ export default function About(props) {
                 </motion.div>
                 <motion.div viewport={{ once: true }} initial={{ opacity: 0, y: -50 }} whileInView={{ opacity: 1, y: 0, }} transition={{ delay: .6, duration: .7 }} className='w-1/2 pl-10 lg:w-full h-full lg:pl-0'>
                     <div className="flex items-center">
-                        <h1 className=' text-2xl font-bold font-mono text-amber-300 uppercase header lg:text-center lg:mt-10 lg:hidden'>About <span className="">me</span>  </h1>
-                        <div className="inline-block bg-amber-400 w-64 h-[1.5px] ml-10 lg:hidden" ></div>
+                        <h1 className=' text-3xl font-bold text-amber-300 uppercase whitespace-nowrap lg:text-center lg:mt-10 lg:hidden'>About <span className="">me</span>  </h1>
+                        <motion.div initial={{ scaleX: 0 }}
+                            whileInView={{ scaleX: 1 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 1, delay: .8 }}
+                            style={{ transformOrigin: "left" }} className=" bg-amber-400 w-64 h-[1.5px] ml-10 lg:hidden">
+                        </motion.div>
                     </div>
 
                     <div className="mb-auto w-11/12 lg:w-full ">

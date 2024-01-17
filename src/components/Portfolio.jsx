@@ -1,16 +1,21 @@
 import { motion } from "framer-motion"
-import { useState } from "react"
+
 
 export default function Portfolio(props) {
-    const [h, seth] = useState(false)
 
     return (
         <motion.section
             ref={props.projectsRef}
-            className="mt-30 lg:mt-48 mb-44 md:mt-36 md:mb-28 xs:mt-40 ">
+            className="mt-30 lg:mt-48 mb-44 md:mt-10 md:mb-28">
             <div className="flex items-center">
-                <h1 className="text-2xl font-bold font-mono text-amber-300  header uppercase inline-block">Portfolio</h1>
-                <div className="inline-block bg-amber-400 w-64 h-[1.5px] ml-10"></div>
+                <motion.h1 className="text-3xl font-bold text-amber-300 uppercase inline-block">Portfolio</motion.h1>
+                <motion.div initial={{ scaleX: 0 }}
+                    whileInView={{ scaleX: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 1 }}
+                    style={{ transformOrigin: "left" }} className="inline-block bg-amber-400 w-64 h-[1.5px] ml-10">
+
+                </motion.div>
             </div>
             <motion.div
                 initial={{ y: 50, opacity: 0 }}
@@ -44,7 +49,7 @@ export default function Portfolio(props) {
                                 borderColor: 'rgb(252, 211, 77)',
                                 color: 'rgb(252, 211, 77)'
                             }}
-                            className="text-slate-200 flex px-5 py-2 mr-2 items-center pointer border-red-500 border" href="https://github.com/Baaz-Cheema/E-Commerce-Front-End" target="_blank"><i className='bx bxl-github text-2xl pr-1' ></i>Code</motion.a>
+                            className="text-slate-200 flex font-mono px-5 py-2 mr-2 items-center pointer border-red-500 border" href="https://github.com/Baaz-Cheema/E-Commerce-Front-End" target="_blank"><i className='bx bxl-github text-2xl pr-1' ></i>Code</motion.a>
                         <motion.a
                             initial={false}
                             whileHover={{
@@ -53,7 +58,7 @@ export default function Portfolio(props) {
                                 borderColor: 'rgb(252, 211, 77)',
                                 color: 'rgb(252, 211, 77)'
                             }}
-                            className="text-slate-200 flex px-5 py-2 ml-2 items-center pointer  border-red-500 border" href="https://almari.netlify.app/" target="_blank"><i className='bx bx-link-external text-2xl pr-1' ></i>Demo</motion.a>
+                            className="text-slate-200 font-mono flex px-5 py-2 ml-2 items-center pointer  border-red-500 border" href="https://almari.netlify.app/" target="_blank"><i className='bx bx-link-external text-2xl pr-1' ></i>Demo</motion.a>
                     </div>
                     <div>
                     </div>
@@ -71,7 +76,7 @@ export default function Portfolio(props) {
                 </motion.div>
                 <div className='w-1/2 h-full relative pr-10 flex flex-col justify-between lg:pr-0 lg:w-full items-center'>
                     <h1 className=" text-center text-xs tracking-wide font-mono text-red-500 lg:mt-10 ">featured project</h1>
-                    <h1 className=' text-2xl font-semibold text-slate-200  flex items-center justify-center'>FitnessX gym</h1>
+                    <h1 className=' text-2xl font-semibold text-slate-200  flex items-center justify-center'>FitnessX Gym</h1>
                     <p className='text-slate-400 mt-6 leading-7 text-l text-center  lg:w-10/12 md:w-full'>
                         This is a responsive and interactive gym website with six unique pages, enriched with smooth animations. It includes a functional shop page, all designed following a Figma template using Tailwind CSS.
                     </p>
@@ -90,7 +95,7 @@ export default function Portfolio(props) {
                                 borderColor: 'rgb(252, 211, 77)',
                                 color: 'rgb(252, 211, 77)'
                             }}
-                            className="text-slate-200 flex px-5 py-2 mr-2 items-center pointer border-red-500 border" href="https://github.com/Baaz-Cheema/FitnessX" target="_blank"><i className='bx bxl-github text-2xl pr-1' ></i>Code</motion.a>
+                            className="text-slate-200 font-mono flex px-5 py-2 mr-2 items-center pointer border-red-500 border" href="https://github.com/Baaz-Cheema/FitnessX" target="_blank"><i className='bx bxl-github text-2xl pr-1' ></i>Code</motion.a>
                         <motion.a
                             initial={false}
                             whileHover={{
@@ -99,7 +104,7 @@ export default function Portfolio(props) {
                                 borderColor: 'rgb(252, 211, 77)',
                                 color: 'rgb(252, 211, 77)'
                             }}
-                            className="text-slate-200 flex px-5 py-2 ml-2 items-center pointer  border-red-500 border" href="https://fitnessxgym.netlify.app/" target="_blank"><i className='bx bx-link-external text-2xl pr-1' ></i>Demo</motion.a>
+                            className="text-slate-200 font-mono flex px-5 py-2 ml-2 items-center pointer  border-red-500 border" href="https://fitnessxgym.netlify.app/" target="_blank"><i className='bx bx-link-external text-2xl pr-1' ></i>Demo</motion.a>
                     </div>
                     <div>
                     </div>
