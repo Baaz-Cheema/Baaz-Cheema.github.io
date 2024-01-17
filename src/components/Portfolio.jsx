@@ -6,7 +6,7 @@ export default function Portfolio(props) {
     return (
         <motion.section
             ref={props.projectsRef}
-            className="mt-30 lg:mt-48 mb-44 md:mt-10 md:mb-28">
+            className="mt-30 lg:mt-48 mb-44 md:mt-20 md:mb-28">
             <div className="flex items-center">
                 <motion.h1 className="text-3xl font-bold text-amber-300 uppercase inline-block">Portfolio</motion.h1>
                 <motion.div initial={{ scaleX: 0 }}
