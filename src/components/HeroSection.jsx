@@ -36,11 +36,11 @@ export default function HeroSection() {
                 <div className='flex lg:flex-col-reverse items-center md:mt-14'>
                     <div className='w-1/2 lg:w-full'>
                         <motion.h1 initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: .5 }} className="font-mono text-l text-slate-400">Hi, my name is</motion.h1>
-                        <motion.h1 initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: .7 }} className='sm:text-5xl pb-2 mb-2 text-slate-200 font-semibold shadow-sm text-6xl whitespace-nowrap'>Baaz Cheema.</motion.h1>
+                        <motion.h1 initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: .7 }} className='sm:text-5xl pb-2 mb-2 text-slate-200 font-semibold shadow-sm text-6xl font-inter whitespace-nowrap'>Baaz Cheema.</motion.h1>
                         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: .9 }} className="mb-5">
                             <motion.h1 ref={el} id="bef" className="-z-10  inline  text-amber-300 pb-2  shadow-sm font-mono text-3xl sm:text-2xl"></motion.h1>
                         </motion.div>
-                        <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.1 }} className='  sm:text-lg text-slate-400 inline-block text-xl'>I am an aspiring react developer based in Gujrat, Pakistan. I enjoy learning new technologies and building user-friendly interfaces.</motion.p>
+                        <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.1 }} className='font-inter  sm:text-lg text-slate-400 inline-block text-xl'>I am an aspiring react developer based in Gujrat, Pakistan. I enjoy learning new technologies and building user-friendly interfaces.</motion.p>
                         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.4, duration: 1 }} className='mt-6 inline-block'>
 
                             <a href="https://drive.google.com/file/d/169k0EK2u0rmDB-BHzleTdHagFefi02Xr/view" target="_blank ">

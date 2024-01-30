@@ -9,12 +9,11 @@ export default function Contact({ contactRef }) {
             viewport={{ once: true }}
             transition={{ duration: .7 }}
             ref={contactRef}
-            className="flex justify-center flex-col items-center mb-32 lg:pt-40 sm:pt-56 xs:mt-72"
+            className="flex font-inter justify-center flex-col items-center mb-32"
         >
             <h1 className="text-slate-200 text-5xl font-bold">Get In Touch</h1>
             <p className="my-10 w-1/2 text-slate-400 sm:w-10/12 text-center">
                 Currently looking for opportunities. Send me a message and i will get back to you ASAP.
-
             </p>
             <div className="sm:text-center sm:flex sm:items-center sm:flex-col">
                 <a href="https://wa.me/923236333123" target='_blank '>

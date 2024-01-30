@@ -41,10 +41,9 @@ export default function Navbar({ scrollTo }) {
                 <Hamburger scrollTo={scrollTo} />
 
                 <div className="flex py-4 md:hidden items-center gap-5">
-                    <li onClick={() => scrollTo('about')} className="list-none px-3 text-slate-300 hover:text-slate-100 cursor-pointer">About</li>
-                    <li onClick={() => scrollTo('projects')} className="list-none px-3 text-slate-300  hover:text-slate-100 cursor-pointer">Projects</li>
-                    <li onClick={() => scrollTo('contact')} className="list-none px-3 text-slate-300  hover:text-slate-100 cursor-pointer">Contact</li>
-                    
+                    <li onClick={() => scrollTo('about')} className="list-none px-3 text-slate-300 hover:text-amber-400 cursor-pointer">About</li>
+                    <li onClick={() => scrollTo('projects')} className="list-none px-3 text-slate-300  hover:text-amber-400 cursor-pointer">Projects</li>
+                    <li onClick={() => scrollTo('contact')} className="list-none px-3 text-slate-300  hover:text-amber-400 cursor-pointer">Contact</li>
                 </div>
             </nav>
         </div>
