@@ -43,7 +43,7 @@ export default function HeroSection() {
                         <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.1 }} className='font-inter  sm:text-lg text-slate-400 inline-block text-xl'>I am an aspiring react developer based in Gujrat, Pakistan. I enjoy learning new technologies and building user-friendly interfaces.</motion.p>
                         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.4, duration: 1 }} className='mt-6 inline-block'>
 
-                            <a href="https://drive.google.com/file/d/169k0EK2u0rmDB-BHzleTdHagFefi02Xr/view" target="_blank ">
+                            <a href="https://drive.google.com/file/d/1imFeC-n4tnGMyuCbc8NAXxKdH9FBueDb/view?usp=sharing" target="_blank ">
                                 <motion.button
                                     whileHover={{
                                         y: -5,

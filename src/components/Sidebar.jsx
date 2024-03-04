@@ -15,7 +15,7 @@ export default function Sidebar() {
                 <a href="https://wa.me/923236333123" target='_blank '>
                     <motion.i whileHover={{ y: -3 }} className=' bx bxl-whatsapp text-4xl text-slate-300  hover:text-amber-400'></motion.i>
                 </a>
-                <a href="mailto:chrisbahadur1@gmail.com">
+                <a href="mailto:bcheema.dev@gmail.com">
                     <motion.i whileHover={{ y: -3 }} className=' bx bx-envelope text-4xl text-slate-300  hover:text-amber-400'></motion.i>
                 </a>
             </div>

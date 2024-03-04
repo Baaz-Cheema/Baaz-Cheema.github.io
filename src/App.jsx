@@ -38,8 +38,8 @@ function App() {
       <Navbar scrollTo={scrollTo} />
       <div className='w-9/12 lg:w-8/12 md:w-11/12 mx-auto'>
         <motion.div className='fixed rotate-90 bottom-36 -right-28 group flex items-center md:hidden' initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.4, duration: 1 }}>
-          <a href="mailto:chrisbahadur1@gmail.com" className=''>
-            <h1 className=' text-slate-200 group-hover:text-amber-400 font-mono mr-5'>chrisbahadur@gmail.com</h1>
+          <a href="mailto:bcheema.dev@gmail.com" className=''>
+            <h1 className=' text-slate-200 group-hover:text-amber-400 font-mono mr-5'>bcheema.dev@gmail.com</h1>
           </a>
           <div className='h-[1px] w-40 bg-slate-200 group-hover:bg-amber-400'>  </div>
         </motion.div>

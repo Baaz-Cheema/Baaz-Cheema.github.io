@@ -28,7 +28,7 @@ export default function Contact({ contactRef }) {
                         <i className='bx bxl-whatsapp mr-1 text-xl'></i> Say Hello
                     </motion.button>
                 </a>
-                <a href="mailto:chrisbahadur1@gmail.com">
+                <a href="mailto:bcheema.dev@gmail.com">
                     <motion.button
                         whileHover={{
                             y: -5,
