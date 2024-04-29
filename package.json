@@ -1,6 +1,6 @@
 {
   "name": "farhan-portfolio",
-  "private": true,
+  "private": false,
   "homepage": "https://baaz-cheema.github.io/baazdev.github.io/",
   "version": "0.0.0",
   "type": "module",
