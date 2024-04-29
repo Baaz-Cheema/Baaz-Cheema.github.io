@@ -1,0 +1,65 @@
+#root {
+    width: 100%;
+    height: 100%;
+}
+
+.custom-scroll::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+}
+
+.scroll-none::-webkit-scrollbar {
+    display: none;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb {
+    background: #607b96;
+    border-radius: 20em;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:hover,
+select:-webkit-autofill,
+select:-webkit-autofill:focus,
+select:-webkit-autofill:hover,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:focus,
+textarea:-webkit-autofill:hover {
+    -webkit-text-fill-color: #bebebe;
+    border: 2px solid #607b96;
+    -webkit-transition: background-color 5000s ease-in-out 0s;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+input[type=checkbox] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid;
+    border-radius: 0.15em;
+    height: 1.15em;
+    margin-top: 1px;
+    width: 1.15em;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #607B96;
+    position: relative;
+}
+
+input[type="checkbox"]:checked::after {
+    content: "";
+    position: absolute;
+    top: 10%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    width: 4px;
+    height: 8px;
+    border: 2px solid #fff;
+    border-top: none;
+    border-left: none;
+    transform: rotate(45deg);
+}
