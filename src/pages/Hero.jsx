@@ -30,11 +30,11 @@ export default function Hero() {
                     <div className="relative z-10">
                         <div className="mb-5 mt-20 lg:mt-0">
                             <p className="text-[14px]">{'//'}checkout my resume</p>
-                            <p className="text-[14px] "><span className="text-[#4D5BCE]">const</span> <span className="text-[#43d9ad]">resume-link</span> = <a href="" target=" _blank" className="text-[#E99287] underline underline-offset-2">{`"baaz-cheema.pdf"`}</a></p>
+                            <p className="text-[14px] "><span className="text-[#4D5BCE]">const</span> <span className="text-[#43d9ad]">resume-link</span> = <a href="https://drive.google.com/file/d/1n2MXwXqs0rOCqDbpKrJ_Nm0-FGfbpVIc/view?usp=sharing" target=" _blank" className="text-[#E99287] underline underline-offset-2">{`"baaz-cheema.pdf"`}</a></p>
                         </div>
                         <div>
                             <p className="text-[14px]">{'//'}find my profile on github</p>
-                            <p className="text-[14px] "><span className="text-[#4D5BCE]">const</span> <span className="text-[#43d9ad]">github-link</span> = <a href="" target=" _blank" className="text-[#E99287] underline underline-offset-2">{`"github.com/baaz-cheema"`}</a></p>
+                            <p className="text-[14px] "><span className="text-[#4D5BCE]">const</span> <span className="text-[#43d9ad]">github-link</span> = <a href="https://github.com/Baaz-Cheema" target=" _blank" className="text-[#E99287] underline underline-offset-2">{`"github.com/baaz-cheema"`}</a></p>
                         </div>
                     </div>
 

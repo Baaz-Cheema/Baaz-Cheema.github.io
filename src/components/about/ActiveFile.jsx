@@ -31,7 +31,7 @@ export default function ActiveFile({ fileName, content, activeFilePath, skills }
     // }, [activeFilePath])
     const logos = [logo, logo2, logo3, logo4, logo5, logo6, logo7, logo8, logo9, logo10, logo11, logo12, logo13];
     return (
-        <div className=" flex-1 w-1/2 lg:w-full h-full lg:h-auto border-r-2 lg:mt-8 lg:border-none border-custom flex flex-col">
+        <div className="flex-1 w-1/2 lg:w-full h-full lg:h-auto border-r-2 lg:mt-8 lg:border-none border-custom flex flex-col">
             <div className="border-b-2 border-custom lg:border-none">
                 <h2 className="flex items-center lg:hidden justify-between gap-10 w-fit pl-4 pr-2  border-r-2 border-custom py-1">
                     {fileName}.js <i className="ri-close-line text-xl text-[#607B96] hover:text-[#FFFFFF]"></i></h2>
