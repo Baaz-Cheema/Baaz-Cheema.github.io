@@ -3,7 +3,7 @@ export const files = {
     {
       name: "Exergy Systems",
       content:
-        "During my ongoing tenure at Exergy Systems, I have been responsible for developing and maintaining frontend applications across multiple projects. My contributions span various modules, including Sales, Purchase, Inventory, and Accounting. I am actively involved in the entire application lifecycle, from requirement gathering to production deployment.\n\nRecently, I played a key role in launching a new project, where I developed the entire frontend side. This involved creating responsive and intuitive user interfaces using modern JavaScript frameworks and libraries. I implemented state management solutions, optimized performance, and ensured cross-browser compatibility.",
+        "During my ongoing tenure at Exergy Systems (May 2024 - present), I have developed multiple production applications with international deployments. My key projects include Nutrify (feed formulation software using Next.js and Shadcn UI), a poultry monitoring dashboard with real-time metrics, and collaboration on Ballurh (food delivery data aggregation dashboard with 500-1000 projected users). I also developed AutobeatX, an attendance system with biometric authentication deployed in UK and Pakistan. Throughout these projects, I've optimized application performance by 15% through code cleanup and package optimization, while implementing modern state management solutions including Redux and Zustand.",
       skillss: [
         {
           name: "Collaborated with cross-functional teams to define, design, and ship new features",
@@ -22,6 +22,31 @@ export const files = {
         },
         {
           name: "Participated in code reviews and implemented best practices for frontend development",
+        },
+      ],
+    },
+    {
+      name: "Freelance",
+      content:
+        "As a freelance developer (November 2023 - May 2024), I delivered three React.js applications for small businesses with 100% client satisfaction. Notable projects included a real estate platform with React/Redux Toolkit that reduced search time by 40%, and a clinic scheduling system handling 200+ appointments weekly. Throughout all projects, I implemented mobile-first responsive design approaches, improving mobile traffic by 35% and ensuring optimal user experiences across devices. My freelance work strengthened my client communication skills and ability to translate business requirements into effective technical solutions.",
+      skillss: [
+        {
+          name: "Developed custom React.js web applications tailored to specific client requirements",
+        },
+        {
+          name: "Implemented state management solutions using Redux Toolkit for complex application needs",
+        },
+        {
+          name: "Created responsive, mobile-first designs for optimal cross-device user experience",
+        },
+        {
+          name: "Managed entire project lifecycles from requirement gathering to deployment",
+        },
+        {
+          name: "Maintained effective client communication and delivered solutions on agreed timelines",
+        },
+        {
+          name: "Optimized performance and user experience based on client feedback and analytics",
         },
       ],
     },
