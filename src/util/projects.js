@@ -13,7 +13,6 @@ export const projects = [
     ],
     image: "https://i.imgur.com/hdIuXbW.png",
     url: "https://almari.netlify.app/",
-    modules: [],
   },
   {
     name: "fitnessX gym",
