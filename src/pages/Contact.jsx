@@ -53,7 +53,7 @@ export default function Contact() {
                 href="mailto:bcheema.dev@gmail.com"
                 className="flex items-center px-2 gap-1  hover:text-[#FFFFFF] mt-1 mb-1"
               >
-                <i className="ri-mail-fill"></i>f.ashraf2656@gmail.com
+                <i className="ri-mail-fill"></i>bcheema.dev@gmail.com
               </a>
               <a
                 href="https://wa.me/923236333123"

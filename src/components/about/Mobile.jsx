@@ -22,7 +22,7 @@ export default function Mobile() {
             </Tab>
             <Tab title={'contacts'}>
                 <div className="text-[16px] px-5">
-                    <a href="mailto:f.ashraf2656@gmail.com" className="flex items-center px-2 gap-1  hover:text-[#FFFFFF] mt-1 mb-1"><i className="ri-mail-fill"></i>f.ashraf2656@gmail.com</a>
+                    <a href="mailto:bcheema.dev@gmail.com" className="flex items-center px-2 gap-1  hover:text-[#FFFFFF] mt-1 mb-1"><i className="ri-mail-fill"></i>bcheema.dev@gmail.com</a>
                     <a href="https://wa.me/923117831326" target=" _blank" className="flex items-center px-2 gap-1  hover:text-[#FFFFFF]"><i className="ri-phone-fill "></i>+923117831326</a>
                 </div>
             </Tab>
