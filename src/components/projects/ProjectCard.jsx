@@ -63,7 +63,7 @@ export default function ProjectCard({
         </h2>
         <div className="border-2 border-custom rounded-lg bg-[#011221]">
           <div className="flex flex-col">
-            <div className="min-h-[120px] overflow-hidden relative">
+            <div className="overflow-hidden relative">
               <canvas ref={canvasRef} className="hidden" />
 
               {(isImageLoading || smallImageData) && (
@@ -87,7 +87,7 @@ export default function ProjectCard({
               <motion.img
                 initial={{ opacity: 0 }}
                 animate={{ opacity: isImageLoading ? 0 : 1 }}
-                className="h-auto max-w-full rounded-t-lg"
+                className="max-h-[145px] object-cover w-full rounded-t-lg"
                 src={image}
                 onLoad={() => setIsImageLoading(false)}
                 onError={() => {
