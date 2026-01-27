@@ -48,7 +48,7 @@ export default function Hero() {
                 <span className="text-[#4D5BCE]">const</span>{" "}
                 <span className="text-[#43d9ad]">resume-link</span> ={" "}
                 <a
-                  href="https://drive.google.com/file/d/1B0TnI0Yirlsewe9WWz57iV7vXFOGMxVC/view?usp=sharing"
+                  href="https://drive.google.com/file/d//view?usp=sharing"
                   target=" _blank"
                   className="text-[#E99287] underline underline-offset-2"
                 >{`"baaz-cheema.pdf"`}</a>
