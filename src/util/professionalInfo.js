@@ -1,52 +1,74 @@
 export const files = {
   "Professional Info": [
     {
-      name: "Exergy Systems",
+      name: "Devsinc",
       content:
-        "During my ongoing tenure at Exergy Systems (May 2024 - present), I have developed multiple production applications with international deployments. My key projects include Nutrify (feed formulation software using Next.js and Shadcn UI), a poultry monitoring dashboard with real-time metrics, and collaboration on Ballurh (food delivery data aggregation dashboard with 500-1000 projected users). I also developed AutobeatX, an attendance system with biometric authentication deployed in UK and Pakistan. Throughout these projects, I've optimized application performance by 15% through code cleanup and package optimization, while implementing modern state management solutions including Redux and Zustand.",
+        "At Devsinc (July 2025 - present), I built an agentic chatbot with LLM function calling that autonomously handles multi-step booking flows, reducing customer drop-off. I engineered a browser extension that cut content team's prompt engineering time by 50% through automatic context scraping. I delivered the Diamond Paints dashboard with sub-2s load times via bundle optimization and lazy loading. I built REST APIs with Node.js/Express and implemented Redux Toolkit for state management and Sentry for error monitoring.",
       skillss: [
         {
-          name: "Collaborated with cross-functional teams to define, design, and ship new features",
+          name: "Built AI-powered applications with LLM integration and autonomous function calling",
         },
         {
-          name: "Implemented robust, scalable, and responsive frontend solutions that drive business objectives",
+          name: "Developed browser extensions automating content workflows",
         },
         {
-          name: "Utilized modern frontend technologies and best practices, including HTML5, CSS3, and JavaScript frameworks",
+          name: "Optimized application performance achieving sub-2s load times through code splitting",
         },
         {
-          name: "Optimized web applications for maximum speed and scalability",
+          name: "Built and integrated REST APIs using Node.js and Express.js",
         },
         {
-          name: "Ensured high-quality user experiences across various devices and browsers",
+          name: "Implemented global state management with Redux Toolkit",
         },
         {
-          name: "Participated in code reviews and implemented best practices for frontend development",
+          name: "Deployed error monitoring with Sentry for proactive debugging",
         },
       ],
     },
     {
-      name: "Freelance",
+      name: "Exergy Systems",
       content:
-        "As a freelance developer (November 2023 - May 2024), I delivered three React.js applications for small businesses with 100% client satisfaction. Notable projects included a real estate platform with React/Redux Toolkit that reduced search time by 40%, and a clinic scheduling system handling 200+ appointments weekly. Throughout all projects, I implemented mobile-first responsive design approaches, improving mobile traffic by 35% and ensuring optimal user experiences across devices. My freelance work strengthened my client communication skills and ability to translate business requirements into effective technical solutions.",
+        "At Exergy Systems (May 2024 - July 2025), I shipped 4 production applications serving UK, Pakistan, and UAE markets with 95% Lighthouse scores and sub-1.5s load times. I built Nutrify (animal nutrition software with Next.js SSR), a poultry monitoring dashboard, and collaborated on Ballurh (multi-source food delivery aggregation dashboard serving 10+ UAE restaurant chains). I developed AutobeatX, a biometric attendance system integrated with 4,500 DigitalPersona devices across UK and Pakistan. I eliminated redundant API calls through Redux Toolkit and TanStack Query, wrote comprehensive Jest test suites, implemented CI/CD via GitHub Actions, and resolved 40+ UI bugs while improving code coverage.",
       skillss: [
         {
-          name: "Developed custom React.js web applications tailored to specific client requirements",
+          name: "Shipped production applications with 95% Lighthouse scores and sub-1.5s load times",
         },
         {
-          name: "Implemented state management solutions using Redux Toolkit for complex application needs",
+          name: "Built server-side rendered applications with Next.js for optimal performance",
         },
         {
-          name: "Created responsive, mobile-first designs for optimal cross-device user experience",
+          name: "Integrated biometric hardware (DigitalPersona) for enterprise attendance systems",
         },
         {
-          name: "Managed entire project lifecycles from requirement gathering to deployment",
+          name: "Eliminated redundant API calls through Redux Toolkit and TanStack Query",
         },
         {
-          name: "Maintained effective client communication and delivered solutions on agreed timelines",
+          name: "Automated deployments with GitHub Actions CI/CD pipelines",
         },
         {
-          name: "Optimized performance and user experience based on client feedback and analytics",
+          name: "Resolved 40+ production bugs and increased test coverage from near-zero",
+        },
+      ],
+    },
+    {
+      name: "OCM Software",
+      content:
+        "At OCM Software (April 2023 - April 2024), I built business management solutions for UK/Ireland markets with WCAG AA accessibility compliance. I implemented claim processing and workforce scheduling systems using Material-UI, ensuring cross-browser compatibility across Chrome, Firefox, Safari, and Edge. I delivered responsive designs that worked consistently for users with disabilities.",
+      skillss: [
+        {
+          name: "Built WCAG AA compliant applications ensuring accessibility for users with disabilities",
+        },
+        {
+          name: "Developed claim processing and workforce scheduling systems",
+        },
+        {
+          name: "Ensured cross-browser compatibility across all major browsers",
+        },
+        {
+          name: "Implemented responsive designs with Material-UI",
+        },
+        {
+          name: "Delivered business management solutions for international markets",
         },
       ],
     },
@@ -55,87 +77,74 @@ export const files = {
   skills: [
     {
       name: "tech-stack",
-      content: `My tech stack allows me to create engaging, efficient, and scalable frontend applications.`,
+      content: `Full-stack JavaScript developer specializing in performance-optimized web applications.`,
       skills: [
         { name: "HTML" },
         { name: "CSS" },
         { name: "JavaScript" },
-        { name: "Bootstrap" },
+        { name: "TypeScript" },
         { name: "React" },
-        { name: "Redux/ Redux Toolkit" },
+        { name: "Next.js" },
+        { name: "Vue.js" },
+        { name: "Node.js" },
+        { name: "Express.js" },
+        { name: "MongoDB" },
+        { name: "Redux Toolkit" },
+        { name: "RTK Query" },
+        { name: "TanStack Query" },
+        { name: "Zustand" },
+        { name: "Pinia" },
         { name: "Tailwind CSS" },
-        { name: "SCSS" },
         { name: "Material UI" },
+        { name: "Shadcn UI" },
         { name: "Framer Motion" },
-        { name: "React Router v6" },
-        { name: "Responsive Design" },
-        { name: "Debugging" },
+        { name: "React Router" },
+        { name: "Vite" },
+        { name: "Webpack" },
+        { name: "Jest" },
+        { name: "GitHub Actions" },
+        { name: "Chart.js" },
+        { name: "Recharts" },
+        { name: "Apex Charts" },
+        { name: "REST APIs" },
       ],
     },
     {
       name: "soft-skills",
       content:
-        "My soft skills empower me to adapt quickly to new environments, learn from every experience, and effectively communicate and collaborate with diverse groups of people.",
+        "Problem-solver who ships production code and optimizes for business impact.",
       skills: [
         {
-          name: "Communication",
-          description: "Ability to convey information effectively.",
-        },
-        {
-          name: "Responsiveness",
-          description: "Quick to react and respond to situations and queries.",
-        },
-        {
-          name: "Listening",
-          description:
-            "Active listening skills to fully understand and respond to others.",
-        },
-        {
-          name: "Growth Mindset",
-          description:
-            "Embraces challenges, persists in the face of setbacks, and sees effort as the path to mastery.",
-        },
-        {
-          name: "Time Management",
-          description: "Effective organization and planning of time.",
-        },
-        {
-          name: "Goal-setting",
-          description: "Ability to set, follow through, and achieve goals.",
-        },
-        {
-          name: "Organization",
-          description: "Keeping things orderly and running smoothly.",
-        },
-        {
-          name: "Planning",
-          description: "Ability to plan tasks and projects effectively.",
-        },
-        {
-          name: "Adaptability",
-          description: "Comfortable with change and able to adjust on the fly.",
-        },
-        {
-          name: "Open-mindedness",
-          description: "Willing to consider new ideas and perspectives.",
-        },
-        {
-          name: "Curiosity",
-          description: "A strong desire to learn and know more.",
+          name: "Performance Optimization",
+          description: "Achieving sub-2s load times and 95% Lighthouse scores.",
         },
         {
           name: "Problem-solving",
-          description:
-            "Identifying problems and implementing effective solutions.",
+          description: "Resolving production bugs and technical debt systematically.",
         },
         {
-          name: "Transparency",
-          description: "Open and honest in all communications.",
+          name: "CI/CD Implementation",
+          description: "Automating builds and deployments for reliable releases.",
         },
         {
-          name: "Critical Thinking",
-          description:
-            "Ability to analyze and evaluate situations objectively.",
+          name: "Cross-functional Collaboration",
+          description: "Working with product, design, and backend teams.",
+        },
+        {
+          name: "Code Quality",
+          description: "Writing tested, maintainable code with comprehensive coverage.",
+        },
+        {
+          name: "Technical Communication",
+          description: "Explaining complex technical decisions clearly.",
+        },
+        {
+          name: "Accessibility Standards",
+          description: "Building WCAG AA compliant applications.",
+        },
+        {
+          name: "State Management",
+          description: "Implementing Redux, Zustand, TanStack Query for complex apps.",
         },
       ],
     },
@@ -144,15 +153,15 @@ export const files = {
   "personal-info": [
     {
       name: "bio",
-      content: `As a self-taught web developer, I love to tackle challenges with code and see each project as a new adventure. At the age of 25, I have dedicated myself to the exciting world of web development and have embarked on a journey of constant learning and growth eager to bring my creativity and problem-solving skills to new opportunities.
+      content: `Software engineer with 2+ years building production web applications. I focus on performance optimization, clean architecture, and shipping features that solve real business problems.
 
-      I pay great attention to detail in the development of my projects, and usually go for a minimalistic design. My ultimate goal is to create software that is both user-friendly and impactful in achieving visions.
+      Currently working with LLMs and AI-powered applications at Devsinc. Previously shipped 4 production apps at Exergy Systems with 95% Lighthouse scores.
       
-      When I am not coding, I am either gaming or at the gym..`,
+      When I'm not coding, I'm at the gym or gaming.`,
     },
     {
       name: "interests",
-      content: `Outside of my professional life, I have a wide range of interests. I enjoy staying active and love outdoor activities like hiking and cycling. I am also a tech enthusiast and love exploring the latest gadgets and software. In my downtime, I enjoy reading and learning about new cultures and languages.`,
+      content: `Outside work: gym, gaming, and staying current with AI/LLM developments. I follow tech trends but prioritize depth over breadth—currently focused on performance optimization and AI integration in web apps.`,
     },
   ],
 };
